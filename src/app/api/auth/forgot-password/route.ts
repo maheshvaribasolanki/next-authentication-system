@@ -39,11 +39,6 @@ export async function POST(
         email,
       });
 
-    /*
-      We return the same message whether
-      the email exists or not.
-      This prevents email enumeration.
-    */
 
     if (!user) {
       return NextResponse.json({
